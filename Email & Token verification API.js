@@ -1,4 +1,4 @@
-//User Email Verification API
+//User Email Sending API
 const http = require("http");
 const nodemailer = require("nodemailer");
 const jwt = require("jsonwebtoken");
