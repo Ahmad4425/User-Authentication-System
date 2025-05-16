@@ -8,7 +8,7 @@ registrationFrom,
 registrationController, 
 loginForm, 
 loginController, 
-Logoutcontroller,
+logoutcontroller,
 changepasswordController, 
 changepasswordForm} 
 
@@ -26,7 +26,7 @@ userRouter.get('/login',loginForm)
 
 userRouter.post('/loggedIn',loginController)
 
-userRouter.get('/logout',verifyToken,Logoutcontroller)
+userRouter.get('/logout',verifyToken,logoutcontroller)
 
 //Protected Routes
 
