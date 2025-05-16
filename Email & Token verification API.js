@@ -11,14 +11,14 @@ const server = http.createServer((request, response) => {
             secure: true,
             port: 465,
             auth: {
-                user: "youremail@gmail.com",
-                pass: "your_password"
+                user: "ahmad@gmail.com",
+                pass: process.env.PASS
             }
         });
 
         const receiver = {
-            from: "youremail@gmail.com",
-            to: "youremail@gmail.com",
+            from: "ahmad@gmail.com",
+            to: "demos@gmail.com",
             subject: "Node Js Mail Testing!",
             text: "Hello this is a text mail!"
         };
